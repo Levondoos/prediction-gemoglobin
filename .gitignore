@@ -1,0 +1,19 @@
+# данные и артефакты
+data/
+*.csv
+*.pt
+*.ckpt
+
+# окружение и кеши
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# логи и эксперименты
+logs/
+runs/
+*.log
+
+# секреты
+.env
