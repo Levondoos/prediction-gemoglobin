@@ -28,38 +28,33 @@
 Установка зависимостей
 
 Все зависимости зафиксированы в uv.lock. Установка одной командой:
-bash
 
-uv sync
+    uv sync
 
 После синхронизации запускать скрипты можно через uv run, например:
-bash
 
-uv run python src/train.py
+    uv run python src/train.py
 
 Запуск
 
 Базовый запуск эксперимента с параметрами по умолчанию:
-bash
 
-chmod +x run_experiment.sh
-./run_experiment.sh
+    chmod +x run_experiment.sh
+    ./run_experiment.sh
 
 Или через uv (чтобы гарантированно использовать окружение проекта):
-bash
 
-uv run bash run_experiment.sh
+    uv run bash run_experiment.sh
 
 Пример запуска с гиперпараметрами:
-bash
 
-./run_experiment.sh \
-  --n-estimators 500 \
-  --max-depth 7 \
-  --learning-rate 0.05 \
-  --seed 123 \
-  --model-out models/xgb_v2.joblib \
-  --tag "tuned-run"
+    ./run_experiment.sh \
+      --n-estimators 500 \
+      --max-depth 7 \
+      --learning-rate 0.05 \
+      --seed 123 \
+      --model-out models/xgb_v2.joblib \
+      --tag "tuned-run"
 
 
 Скрипт включает в себя следующие гиперпараметры:
@@ -75,8 +70,7 @@ bash
 
 
 Пример вывода
-text
 
-[14:32:01] запуск эксперимента models/model.joblib
-[14:32:01] параметры: n_estimators=100 max_depth=5 learning_rate=0.01 seed=42
-[14:32:15] заняло 14 секунд
+    [14:32:01] запуск эксперимента models/model.joblib
+    [14:32:01] параметры: n_estimators=100 max_depth=5 learning_rate=0.01 seed=42
+    [14:32:15] заняло 14 секунд
