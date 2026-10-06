@@ -74,4 +74,3 @@ train = df_ob[net:]
 outdir = pathlib.Path(a.outdir); outdir.mkdir(parents=True, exist_ok=True)
 train.to_csv(outdir / "train.csv", index=False)
 test.to_csv(outdir / "test.csv", index=False)
-print(train.head())
