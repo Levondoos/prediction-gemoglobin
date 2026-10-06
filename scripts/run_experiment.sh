@@ -27,7 +27,7 @@ while [[ $# -gt 0 ]]; do
     -o|--model-out)     MODEL_OUT="$2";    shift 2 ;;
     -m|--max-depth)     MAX_DEPTH="$2";    shift 2 ;;
     -s|--seed)          SEED="$2";         shift 2 ;;
-    -l|--learning-rate) LEARNING_RATE="$2" shift 2 ;;
+    -l|--learning-rate) LEARNING_RATE="$2"; shift 2 ;;
     -t|--tag)           TAG="$2";          shift 2 ;;
     -h|--help)         usage; exit 0 ;;
     *) echo "неизвестный аргумент: $1" >&2; usage >&2; exit 2 ;;
